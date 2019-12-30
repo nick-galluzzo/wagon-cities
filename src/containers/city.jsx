@@ -1,14 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const City = (props) => {
+const City = ({ city }) => {
   return (
     <li
       className="list-group-item"
+      onClick={() => {console.log('hi')}}
     >
-    {props.city.name}
+    {city.name}
     </li>
   );
 };
+
 
 export default City;

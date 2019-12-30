@@ -23,7 +23,6 @@ class CityList extends Component {
   }
 }
 
-
 const mapStateToProps = (state) => ({
   cities: state.cities.cities
 });
