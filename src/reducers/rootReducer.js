@@ -4,7 +4,7 @@ import selectReducer from './select_city_reducer';
 
 const rootReducer = combineReducers({
   cities: citiesReducer,
-  selected: selectReducer
+  selectCity: selectReducer
 });
 
 export default rootReducer;

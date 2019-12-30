@@ -1,4 +1,5 @@
-import SELECT_CITY from '../actions/index';
+import { SELECT_CITY } from '../actions/index';
+
 const selectReducer = (state = null, action) => {
   switch (action.type) {
     case SELECT_CITY: {

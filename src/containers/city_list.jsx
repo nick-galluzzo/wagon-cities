@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import React, { Component } from 'react';
-import listCities from '../actions/index';
+import {listCities} from '../actions/index';
 import City from './city';
 
 
@@ -14,6 +14,7 @@ class CityList extends Component {
       );
     });
   }
+
   render () {
     return (
       <ul className="list-group cities">
@@ -26,5 +27,6 @@ class CityList extends Component {
 const mapStateToProps = (state) => ({
   cities: state.cities.cities
 });
+
 
 export default connect(mapStateToProps)(CityList);
